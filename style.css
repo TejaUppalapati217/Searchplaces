@@ -1,0 +1,114 @@
+/* General Styling */
+body {
+    font-size: 16px;
+    color: rgb(33, 37, 41);
+    font-family: system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", "Liberation Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+    background-color: #fff;
+    padding: 20px;
+  }
+  
+  .container {
+    max-width: 800px;
+    margin: 20px auto;
+    padding: 10px;
+  }
+  
+  /* Search Container */
+  .search-container {
+    position: relative;
+    width: 241px;
+  }
+  
+  /* Search Box Styling */
+  .search-container input[type="text"] {
+    width: 100%;
+    height: 38px;
+    font-size: 16px;
+    background-color: rgb(255, 255, 255);
+    border: 1px solid rgb(206, 212, 218);
+    padding: 6px 80px 6px 12px; /* Right padding for shortcut */
+    border-radius: 4px;
+    color: rgb(33, 37, 41);
+    box-sizing: border-box;
+  }
+  
+  .search-container input[type="text"]:focus {
+    border-color: #7952b3;
+    box-shadow: 0 0 0 3px rgb(121 82 179 / 25%);
+    outline: none;
+  }
+  
+  /* Disabled state */
+  .search-container input[type="text"]:disabled {
+    background-color: rgb(233, 236, 239);
+    color: rgb(33, 37, 41);
+    cursor: not-allowed;
+  }
+  
+  /* Keyboard Shortcut Box Styling */
+  .shortcut-hint {
+    position: absolute;
+    right: 10px;
+    top: 7px;
+    font-size: 12px;
+    border: 1px solid rgb(222, 226, 230);
+    border-radius: 2px;
+    background-color: #fff;
+    padding: 0 4px;
+    height: 24px;
+    line-height: 24px;
+    color: rgb(33, 37, 41);
+  }
+  
+  /* Shortcut style when input disabled */
+  .search-container input[type="text"]:disabled + .shortcut-hint {
+    background-color: rgb(233, 236, 239);
+    border-color: rgb(206, 212, 218);
+  }
+  
+  /* Table Styling */
+  table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+    background-color: #fff;
+  }
+  
+  th, td {
+    padding: 8px;
+    border: 1px solid rgb(222, 226, 230);
+    text-align: left;
+  }
+  
+  th {
+    font-weight: 700;
+  }
+  
+  /* Pagination Styling */
+  .pagination-container {
+    margin-top: 20px;
+  }
+  
+  button {
+    padding: 6px 12px;
+    margin-right: 8px;
+    border: 1px solid rgb(206, 212, 218);
+    border-radius: 4px;
+    background-color: #f8f9fa;
+    cursor: pointer;
+  }
+  
+  button:hover {
+    background-color: #e2e6ea;
+  }
+  
+  /* Spinner Styling */
+  .hidden {
+    display: none;
+  }
+  
+  #spinner {
+    margin-top: 10px;
+    font-weight: bold;
+  }
+  
